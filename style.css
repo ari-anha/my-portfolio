@@ -94,6 +94,17 @@ p, li {
   font-size: 19px;
 }
 
+@media (max-height: 800px) {
+  p {
+    font-size: 10px;
+  }
+
+  img, .overlay {
+    max-width: 100%;
+    height: auto;
+  }
+
+}
 
 .myphoto {
   display: block;
