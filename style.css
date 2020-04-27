@@ -1,26 +1,26 @@
 html, body {
-    background-color: #ff6347;
+    background-color: #FFCF5A;
 }
 
 .flex {
     display: flex;
     justify-content: center;
-    background-color: #ff6347;
+    background-color: #FFCF5A;
 }
 
 h1, h2, h3 {
     text-align: center;
     font-family: 'BioRhyme', serif;
-    color: #fff;
+    color: #C66AFF;
 }
-
-
 
 p {
     font-family: 'Montserrat', sans-serif;
-    color: blanchedalmond;
+    color: #42007F;
     font-size: 16px;
     line-height: 1.2em;
+    margin-left: auto;
+    margin-right: auto;
 }
 nav, footer {
     width: 100%;
@@ -31,35 +31,30 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #fff;
+    background-color: #3DFCE8;
 }
   
 .menu {
     float: left;
     width: 33.333333333333333333333333%;
     font-family: 'BioRhyme', serif;
-    color: #2F4858
+    background-color: #3DFCE8;
 }
   
 .links {
     font-size: 16px;
-    line-height: 1.2em;
-    height: 24px;
     display: block;
-    color: #2F4858;
+    color: rgb(255, 118, 38);
     text-align: center;
     text-decoration: none;
+    background-color: #3DFCE8;
 }
 
 .links:hover {
-    background-color: #C66AFF;
+    color: #42007F;
+    background-color: #FF7297;
 }
 /*main navigation end*/
-
-
-
-
 
 /*about me picture start*/
 .myphoto {
@@ -81,7 +76,7 @@ form {
 }
 
 label {
-    color: #ffffff;
+    color: rgb(255, 89, 38);
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -96,12 +91,20 @@ button {
     min-height: 48px;
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
-    font-size: 10px;
+    font-size: 14px;
     border-radius: 5px;
     background-color: #40547C;
     padding: 8px 17px 10px 17px;
 }
-  
+
+#submit {
+    background-color: #5AA91F;
+}
+
+#reset {
+    background-color: #BF1F00;
+}
+/*  
 button:hover {
   animation-name: background-color;
   animation-duration: 2.5s;
@@ -127,13 +130,14 @@ button:hover {
     background-color: purple;
   }
 }
+*/
 /*form end*/
 
 
 
 /*contact me social media start*/
 .social {
-  background-color: #ff6347;
+  background-color: #FFCF5A;
 }
 
 .fa {
@@ -173,8 +177,8 @@ button:hover {
 
 /*footer start*/
 footer {
-    background-color: #ffffff;
-    color: #735895;
+    background-color: #3DFCE8;
+    color: rgb(255, 118, 38);
     font-family: 'BioRhyme', serif;
     font-size: 16px;
 }
@@ -186,8 +190,16 @@ footer {
         width: 400px;
         height: 32px;
     }
+
 }
- 
+@media screen and (min-width: 500px) {
+    p {
+        width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 @media screen and (min-width: 800px) {
     /*body {
       width: 800px;
@@ -205,6 +217,14 @@ footer {
     
     h3 {
         font-size: 28px;
+    }
+
+    ul {
+        height: 30px;
+    }
+
+    .links {
+        font-size: 30px;
     }
 }
 /*media query end*/
