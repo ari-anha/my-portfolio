@@ -1,84 +1,144 @@
 html, body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
+    background-color: #ff6347;
+}
 
-.container {
+.flex {
     display: flex;
-    flex-wrap: wrap;
-  }
-
-.box {
-    width: 100%;
-  }
+    justify-content: center;
+    background-color: #ff6347;
+}
 
 h1, h2, h3 {
-      text-align: center;
-      color: #f70757
-  }
+    text-align: center;
+    font-family: 'BioRhyme', serif;
+    color: #fff;
+}
 
 
 
+p {
+    font-family: 'Montserrat', sans-serif;
+    color: blanchedalmond;
+    font-size: 16px;
+    line-height: 1.2em;
+}
+nav, footer {
+    width: 100%;
+}
+
+/*main navigation start*/
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: tomato;
-  }
-  
-li {
-    float: left;
-  }
-  
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-
-li a:hover {
-    background-color: salmon;
-  }
-
-.title, .about, .hobbies {
     background-color: #fff;
-  }
-
-footer {
-    background-color: #ff6347;
-    color: #fff;
-    padding: 10px 20px 10px 20px;
-  }
-
-@media screen and (min-width: 550px) {
-    .title {
-      width: 33%;
-      }
-    .about {
-      width: 67%;
-    }
 }
- 
-@media screen and (min-width: 800px) {
-    .container {
-      width: 950px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  
+.menu {
+    float: left;
+    width: 33.333333333333333333333333%;
+    font-family: 'BioRhyme', serif;
+    color: #2F4858
+}
+  
+.links {
+    font-size: 16px;
+    line-height: 1.2em;
+    height: 24px;
+    display: block;
+    color: #2F4858;
+    text-align: center;
+    text-decoration: none;
 }
 
-/* Save below for the "Contact" page
-  #social {
-    float: right;
+.links:hover {
+    background-color: #C66AFF;
+}
+/*main navigation end*/
+
+
+
+
+
+/*about me picture start*/
+.myphoto {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 221px;
+    width: 170px;
+    border-radius: 30%;
+    border-width: 3px;
+}
+/*about me picture end*/
+
+/*form start*/
+form {
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input {
+    width: 100%;
+    height: 32px;
+    text-align: start;
+}
+
+button {
+    min-width: 48px;
+    min-height: 48px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    border-radius: 5px;
+    background-color: #40547C;
+    padding: 8px 17px 10px 17px;
+}
+  
+button:hover {
+  animation-name: background-color;
+  animation-duration: 2.5s;
+}
+  
+@keyframes background-color {
+  0% {
+    background-color: #40547C;
   }
+  20% {
+    background-color: #5AA91F;
+  }
+  40% {
+    background-color: #F74587;
+  }
+  60% {
+    background-color: #3BAD00;
+  }
+  80% {
+    background-color: orangered;
+  }
+  100% {
+    background-color: purple;
+  }
+}
+/*form end*/
+
+
+
+/*contact me social media start*/
+.social {
+  background-color: #ff6347;
+}
 
 .fa {
     margin: 2px;
-    padding: 10px;
+    padding: 15px;
     font-size: 60px;
     width: 20px;
     text-align: center;
@@ -109,22 +169,42 @@ footer {
     background: #125688;
     color: white;
   }
-  Save above for the "Contact" page*/
+/*contact me social media end*/
 
-.myphoto {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 221px;
-    width: 170px;
-    border-radius: 30%;
-    border-color: rgb(51, 49, 49);
-    border-width: 3px;
-    border-style: solid;
+/*footer start*/
+footer {
+    background-color: #ffffff;
+    color: #735895;
+    font-family: 'BioRhyme', serif;
+    font-size: 16px;
 }
+/*footer end*/
 
-.photos {
-    height: 115px; 
-    width: 115px;
-    border-radius: 50%;
+/*media query start*/
+@media screen and (min-width: 410px) {
+    input {
+        width: 400px;
+        height: 32px;
+    }
 }
+ 
+@media screen and (min-width: 800px) {
+    /*body {
+      width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    */
+    h1 {
+        font-size: 60px;
+    }
+    
+    h2 {
+        font-size: 38px;
+    }
+    
+    h3 {
+        font-size: 28px;
+    }
+}
+/*media query end*/

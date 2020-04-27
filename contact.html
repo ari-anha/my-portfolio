@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Arianha</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=BioRhyme&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--main navigation start-->
+    <header>
+        <nav>
+           <ul>
+                <li class="menu"><a href="index.html" class="links"><b>Home</b></a></li>
+                <li class="menu"><a href="aboutme.html" class="links"><b>About</b></a></li>
+                <li class="menu"><a href="contact.html" class="links"><b>Contact</b></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--main navigation end-->
+
+    <h1><u>Contact me</u></h1>
+
+    <!--form start-->
+    <form name="myForm"> 
+            <h2>To message me:</h2>
+            <div class="flex">
+                <label>Name</label>
+            </div>
+
+            <div class="flex">
+                <input type="text" id="fName" name="fName" required>
+            </div>
+
+            <br>
+
+            <div class="flex">
+                <label>Email</label>
+            </div>
+
+            <div class="flex">
+                <input type="email" id="fEmail" name="fEmail" required>
+            </div>
+
+            <br>
+
+            <div class="flex">
+                <label>Message</label>
+            </div>
+
+            <div class="flex" >
+                <input type="text" id="fMessage" name="fMessage" required>
+            </div>
+
+            <br>
+
+            <div class="flex">
+                <button type="submit" id="submit"><b>Submit</b></button>
+                <button type="reset" id="reset"><b>Reset</b></button>
+            </div>
+    </form>
+    <script>
+        const submit = document.getElementById('submit');
+        submit.addEventListener('click', function() {
+            const name = document.getElementById('fName').value;
+            const email = document.getElementById('fEmail').value;
+            const message = document.getElementById('fMessage').value;
+            if (name !== "" && email !== "" && message !== "") {
+                alert(name + ', ' + email + ', ' + message);
+            } else {
+                alert('Please fill in all fields');
+            }
+        }, false);
+    </script>
+    <!--form end-->
+
+    <div class="social">
+        <h3>You can also contact me on:</h3>
+        <ul class="flex">
+            <li><a href="https://github.com/ari-anha" target="_blank" class="fa fa-github"></a></li>
+            <li><a href="https://www.linkedin.com/in/arianha-bayley-94192878/?originalSubdomain=uk" target="_blank" class="fa fa-linkedin"></a></li>
+            <li><a href="https://twitter.com/ArianhaB" target="_blank" class="fa fa-twitter"></a></li>
+            <li><a href="https://www.instagram.com/ari_anagram/" target="_blank" class="fa fa-instagram"></a></li>
+        </ul>
+    </div>
+
+    <br><br>
+    <footer>
+        <div>&copy;Arianha Bayley, 2020</div>
+    </footer>
+
+</body>
+</html>
