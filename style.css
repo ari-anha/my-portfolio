@@ -11,7 +11,14 @@ html, body {
 h1, h2, h3 {
     text-align: center;
     font-family: 'BioRhyme', serif;
+}
+
+h1, h3 {
     color: #C66AFF;
+}
+
+h2 {
+    color: rgb(255, 89, 38);
 }
 
 p {
@@ -22,6 +29,7 @@ p {
     margin-left: auto;
     margin-right: auto;
 }
+
 nav, footer {
     width: 100%;
 }
@@ -52,11 +60,36 @@ ul {
 
 .links:hover {
     color: #42007F;
-    background-color: #FF7297;
+    background-color: rgb(252, 38, 95);
 }
 /*main navigation end*/
 
-/*about me picture start*/
+/*home project start*/
+.cards {
+    display: grid;
+    grid-template-columns:repeat(auto-fit, 310px);
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.project {
+    display: grid;
+    grid-template-rows: max-content 200px 1fr;
+    margin-bottom: 30px;
+    border-style: dotted;
+    border-color: magenta;
+    padding: 7px;
+}
+
+.project img {
+    object-fit: cover;
+    justify-self: center;
+    width: 100%;
+    height: 100%;
+}
+/*home project start*/
+
+/*about me start*/
 .myphoto {
     display: block;
     margin-left: auto;
@@ -66,7 +99,7 @@ ul {
     border-radius: 30%;
     border-width: 3px;
 }
-/*about me picture end*/
+/*about me end*/
 
 /*form start*/
 form {
@@ -133,8 +166,6 @@ button:hover {
 */
 /*form end*/
 
-
-
 /*contact me social media start*/
 .social {
   background-color: #FFCF5A;
@@ -193,20 +224,14 @@ footer {
 
 }
 @media screen and (min-width: 500px) {
-    p {
-        width: 480px;
+    .pLarge {
+        width: 450px;
         margin-left: auto;
         margin-right: auto;
     }
 }
 
 @media screen and (min-width: 800px) {
-    /*body {
-      width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    */
     h1 {
         font-size: 60px;
     }
@@ -217,6 +242,12 @@ footer {
     
     h3 {
         font-size: 28px;
+    }
+
+    .pLarge {
+        width: 650px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     ul {
