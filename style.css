@@ -90,16 +90,32 @@ ul {
 /*home project start*/
 
 /*about me start*/
+:root {
+    --blur: 10px;
+}
+
+.controls {
+    margin-left: 10%;
+    margin-right: 10%;   
+    margin-bottom: 20px;
+}
+
+input {
+    width: 20%;
+}
+
 .myphoto {
+    filter: blur(var(--blur));
     display: block;
     margin-left: auto;
     margin-right: auto;
     height: 221px;
     width: 170px;
     border-radius: 30%;
-    border-width: 3px;
 }
 /*about me end*/
+
+
 
 /*form start*/
 form {
